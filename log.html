@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Log Activity</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/log.css" />
+</head>
+<body>
+  <header>
+    <h1>Log Daily Activity</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="logForm">
+      <label>
+        Transport (km by car):
+        <input type="number" id="transport" min="0" />
+      </label>
+
+      <label>
+        Meat-based meals:
+        <input type="number" id="food" min="0" />
+      </label>
+
+      <label>
+        Electricity used (kWh):
+        <input type="number" id="energy" min="0" />
+      </label>
+
+      <button type="submit">Save Entry</button>
+    </form>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/log.js"></script>
+</body>
+</html>

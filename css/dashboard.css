@@ -1,0 +1,18 @@
+.summary {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.summary p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.chart {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carbon Tracker</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <header>
+    <h1>🌍 Carbon Tracker</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="log.html">Log Activity</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="summary">
+      <h2>Today’s Carbon Footprint</h2>
+      <p id="todayTotal">0 kg CO₂e</p>
+    </section>
+
+    <section class="summary">
+      <h2>Total This Week</h2>
+      <p id="weekTotal">0 kg CO₂e</p>
+    </section>
+
+    <section class="chart">
+      <h2>Recent Trend</h2>
+      <canvas id="trendChart"></canvas>
+    </section>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
