@@ -10,3 +10,4 @@ carbon footprint based on daily activities.
 - Transparent methodology
 
 Built with vanilla HTML, CSS, and JavaScript.
+
