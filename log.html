@@ -16,21 +16,43 @@
 
   <main>
     <form id="logForm">
-      <label>
-        Transport (km by car):
-        <input type="number" id="transport" min="0" />
-      </label>
-
-      <label>
-        Meat-based meals:
-        <input type="number" id="food" min="0" />
-      </label>
-
-      <label>
-        Electricity used (kWh):
-        <input type="number" id="energy" min="0" />
-      </label>
-
+      <fieldset>
+        <legend>Transport</legend>
+        <label>Car (km): <input type="number" id="car_km" min="0" /></label>
+        <label>Bus (km): <input type="number" id="bus_km" min="0" /></label>
+        <label>Train (km): <input type="number" id="train_km" min="0" /></label>
+        <label>Bike (km): <input type="number" id="bike_km" min="0" /></label>
+        <label>Flight (short-haul, km): <input type="number" id="flight_short_km" min="0" /></label>
+        <label>Flight (long-haul, km): <input type="number" id="flight_long_km" min="0" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Meals</legend>
+        <label>Meat-based meals: <input type="number" id="meat_meals" min="0" /></label>
+        <label>Vegetarian meals: <input type="number" id="vegetarian_meals" min="0" /></label>
+        <label>Vegan meals: <input type="number" id="vegan_meals" min="0" /></label>
+        <label>Fish meals: <input type="number" id="fish_meals" min="0" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Energy</legend>
+        <label>Grid electricity (kWh): <input type="number" id="grid_kwh" min="0" /></label>
+        <label>Solar electricity (kWh): <input type="number" id="solar_kwh" min="0" /></label>
+        <label>Gas (kWh): <input type="number" id="gas_kwh" min="0" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Heating</legend>
+        <label>Gas (therms): <input type="number" id="gas_therm" min="0" /></label>
+        <label>Oil (litres): <input type="number" id="oil_litre" min="0" /></label>
+        <label>Electric (kWh): <input type="number" id="electric_heat_kwh" min="0" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Waste</legend>
+        <label>Landfill (kg): <input type="number" id="landfill_kg" min="0" /></label>
+        <label>Recycled (kg): <input type="number" id="recycled_kg" min="0" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Water</legend>
+        <label>Water used (litres): <input type="number" id="water_litre" min="0" /></label>
+      </fieldset>
       <button type="submit">Save Entry</button>
     </form>
   </main>
