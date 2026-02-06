@@ -1,24 +1,123 @@
 form {
   background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  max-width: 400px;
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+  border: none;
+  padding: 1.5rem 0;
+  margin: 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+fieldset legend {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #27ae60;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  letter-spacing: -0.5px;
 }
 
 label {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
-input {
+label input {
+  display: block;
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.75rem;
+  margin-top: 0.4rem;
+  border: 2px solid #e0e6ed;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+label input:focus {
+  outline: none;
+  border-color: #27ae60;
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+  background-color: #f8fdf7;
+}
+
+label input::placeholder {
+  color: #95a5a6;
+}
+
+label input::-webkit-outer-spin-button,
+label input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label input[type=number] {
+  -moz-appearance: textfield;
 }
 
 button {
-  background: #2e7d32;
+  background: linear-gradient(135deg, #27ae60 0%, #2e7d32 100%);
   color: white;
   border: none;
-  padding: 0.6rem 1rem;
+  padding: 0.85rem 2rem;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(39, 174, 96, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(39, 174, 96, 0.2);
+}
+
+button:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 1.5rem;
+  }
+  
+  fieldset {
+    padding: 1rem 0;
+  }
+  
+  fieldset legend {
+    font-size: 1.1rem;
+  }
+  
+  label {
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+  }
 }
